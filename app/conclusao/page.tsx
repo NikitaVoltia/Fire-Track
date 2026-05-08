@@ -28,7 +28,7 @@ const teamMembers = [
     avatar: 'DA'
   },
   {
-    name: 'Jose Luiz Gomes',
+    name: 'José Luiz Gomes',
     role: 'Estatísticas e Multimédia',
     avatar: 'JG'
   },
