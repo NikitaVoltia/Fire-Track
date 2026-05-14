@@ -114,40 +114,6 @@ const quizQuestions = [
   }
 ]
 
-// Gallery Images
-const galleryImages = [
-  {
-    src: 'https://images.unsplash.com/photo-1602610018660-f1c5f0a66a5f?w=600&h=400&fit=crop',
-    alt: 'Incêndio florestal',
-    caption: 'Incêndio florestal em propagação'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1542856391-010fb87dcfed?w=600&h=400&fit=crop',
-    alt: 'Floresta após incêndio',
-    caption: 'Paisagem devastada pelo fogo'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&h=400&fit=crop',
-    alt: 'Reflorestação',
-    caption: 'Voluntários em ação de reflorestação'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&h=400&fit=crop',
-    alt: 'Floresta saudável',
-    caption: 'Floresta saudável e biodiversa'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1516733968668-dbdce39c0651?w=600&h=400&fit=crop',
-    alt: 'Bombeiros em ação',
-    caption: 'Combate a incêndio florestal'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=600&h=400&fit=crop',
-    alt: 'Floresta no outono',
-    caption: 'Floresta autóctone portuguesa'
-  }
-]
-
 // Videos
 const videos = [
   {
