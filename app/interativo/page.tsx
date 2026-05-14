@@ -152,9 +152,10 @@ const galleryImages = [
 const videos = [
   {
     title: 'Como prevenir incêndios florestais',
-    thumbnail: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=225&fit=crop',
-    duration: '5:32',
-    description: 'Aprenda medidas simples para prevenir incêndios na sua comunidade.'
+    thumbnail: 'https://img.youtube.com/vi/8EYwiykF2dY/maxresdefault.jpg',
+    duration: 'YouTube',
+    description: 'Aprenda medidas simples para prevenir incêndios na sua comunidade.',
+    url: 'https://www.youtube.com/watch?v=8EYwiykF2dY'
   },
   {
     title: 'Tecnologia no combate aos incêndios',
@@ -504,34 +505,40 @@ export default function InterativoPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {videos.map((video, index) => (
-                <motion.div
-                  key={index}
-                  variants={fadeInUp}
-                  whileHover={{ y: -10 }}
-                  className="group bg-card border border-border rounded-2xl overflow-hidden cursor-pointer"
+                <a
+                  href={video.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <div className="relative aspect-video overflow-hidden">
-                    <img
-                      src={video.thumbnail}
-                      alt={video.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-background/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                      <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center">
-                        <Play className="w-8 h-8 text-primary-foreground ml-1" />
+                  <motion.div
+                    key={index}
+                    variants={fadeInUp}
+                    whileHover={{ y: -10 }}
+                    className="group bg-card border border-border rounded-2xl overflow-hidden cursor-pointer"
+                  >
+                    <div className="relative aspect-video overflow-hidden">
+                      <img
+                        src={video.thumbnail}
+                        alt={video.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-background/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center">
+                          <Play className="w-8 h-8 text-primary-foreground ml-1" />
+                        </div>
+                      </div>
+                      <div className="absolute bottom-2 right-2 px-2 py-1 bg-background/80 rounded text-xs font-medium text-foreground">
+                        {video.duration}
                       </div>
                     </div>
-                    <div className="absolute bottom-2 right-2 px-2 py-1 bg-background/80 rounded text-xs font-medium text-foreground">
-                      {video.duration}
+                    <div className="p-4">
+                      <h3 className="font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
+                        {video.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">{video.description}</p>
                     </div>
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
-                      {video.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">{video.description}</p>
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </a>
               ))}
             </div>
 
