@@ -124,16 +124,18 @@ const videos = [
     url: 'https://www.youtube.com/watch?v=8EYwiykF2dY'
   },
   {
-    title: 'Tecnologia no combate aos incêndios',
-    thumbnail: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=225&fit=crop',
-    duration: '8:15',
-    description: 'Descubra como drones e satélites ajudam a detetar incêndios.'
+    title: 'Vídeo Learning ProCiv Madeira - Incêndio Florestal',
+    thumbnail: 'https://img.youtube.com/vi/oejnnlGHF_0/maxresdefault.jpg',
+    duration: 'YouTube',
+    description: 'Aprenda como prevenir incêndios florestais e quais os cuidados a ter para proteger a população e o ambiente.',
+    url: 'https://www.youtube.com/watch?v=oejnnlGHF_0'
   },
   {
-    title: 'Reflorestação em Portugal',
-    thumbnail: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&h=225&fit=crop',
-    duration: '6:48',
-    description: 'Conheça os projetos de reflorestação com espécies autóctones.'
+    title: 'Incêndios Florestais e Fogos',
+    thumbnail: 'https://img.youtube.com/vi/dbmcbZfKVnU/maxresdefault.jpg',
+    duration: 'YouTube',
+    description: 'Aprenda o que são os incêndios florestais e os fogos, as suas causas e consequências para o ambiente e para a população.',
+    url: 'https://www.youtube.com/watch?v=dbmcbZfKVnU'
   }
 ]
 
