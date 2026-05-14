@@ -374,17 +374,7 @@ export default function ConclusaoPage() {
                 </motion.div>
               ))}
             </div>
-
-            <motion.div
-              variants={fadeInUp}
-              className="mt-8 p-6 bg-muted/50 rounded-2xl"
-            >
-              <p className="text-sm text-muted-foreground text-center">
-                <strong className="text-foreground">Nota:</strong> As referências bibliográficas seguem as normas APA.
-              </p>
-            </motion.div>
-
-          </motion.div>
+           </motion.div>
         </div>
       </section>
 
