@@ -23,7 +23,7 @@ const staggerContainer = {
 
 const teamMembers = [
   {
-    name: 'Dana Azevedo',
+    name: 'Diana Azevedo',
     role: 'Design e Desenvolvimento',
     avatar: 'DA'
   },
